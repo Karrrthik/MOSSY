@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>MOSSY</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">MOSSY</h1>
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div>
+                <label class="code">Upload your Code: </label>
+                <input class="btn" type="file" name="code" required></input>
+            </div>
+            <hr>
+            <input type="submit" class="btn btn-primary" value="Submit">
+        </form>
+        <p>Just add your file and press submit. You should get an email with all the detail you need.</p>
+    </div>
+</body>
+
+</html>
