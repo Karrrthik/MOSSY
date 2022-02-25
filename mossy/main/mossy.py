@@ -8,14 +8,14 @@ from .models import Files
 from django.shortcuts import redirect
 
 
-userid = 425762628
+userid = #########
 
 m = mosspy.Moss(userid, "cc")
 
 def check(file):
     # _path = "/Users/karthik/Projects/MADD/backend/madd/"
     m.addFilesByWildcard("files/*")
-    print("fetching moss shit")
+    print("fetching moss")
     url = m.send(lambda file_path, display_name: print('*', end='', flush=True))
     print ("Report Url: " + url)
 
