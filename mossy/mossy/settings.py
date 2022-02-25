@@ -85,7 +85,7 @@ DATABASES = {
         'ENGINE': 'djongo',
         'NAME': 'mossy',
         'CLIENT': {
-            'host': 'mongodb+srv://mossy:Ace200311@cluster0.bk01y.mongodb.net/mossy?retryWrites=true&w=majority'
+            'host': '##############'
         }  
     }
 }
